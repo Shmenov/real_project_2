@@ -102,7 +102,7 @@ html {
 	--color-dark: #181818;
 	--color-text: #000;
 
-	--font-main: "Roboto", sans-serif;
+	--font-main: "Inter", sans-serif;
 	--font-accent: "GoodDog", cursive;
 	
 	--fw-light: 400;
@@ -133,6 +133,7 @@ body {
 	font-size: var(--text-sm);
 	font-weight: var(--fw-light);
 	line-height: var(--line-height-tight);
+	text-align: center;
 }
 
 img {
@@ -249,3 +250,254 @@ a {
 	HERO
 ------*/
 
+.hero {
+	background-color: #000;
+	padding-top: 100px;
+}
+
+.hero__wrapper {
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.hero__title {
+	font-weight: var(--fw-heavy);
+	font-size: var(--text-xxxl);
+	line-height: var(--line-height-snug);
+	color: #fff;
+}
+
+.hero__text {
+	line-height: var(--line-height-relaxed);
+	color: #8B8B8B;
+	margin-top: 24px;
+	margin-bottom: 40px;
+}
+
+.hero__button {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	font-weight: var(--fw-bold);
+	line-height: var(--line-height-normal);
+	color: var(--color-text);
+	padding: 16px 32px;
+	background-color: var(--color-primary);
+	border-radius: 40px;
+	transition: transform var(--transition-normal);
+}
+
+.hero__button:hover {
+	transform: translateY(-3px);
+}
+
+.hero__button::before {
+	content: "All research start from here";
+	position: absolute;
+	width: 91px;
+	font-family: var(--font-accent);
+	font-size: var(--text-xs);
+	color: #fff;
+	top: -15px;
+	right: -110px;
+	transform: rotate(6deg);
+	pointer-events: none;
+}
+
+.hero__button::after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 35px;
+	background-image: url("../img/arrow\ —\ white.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 30px;
+	right: -50px;
+	pointer-events: none;
+}
+
+.hero__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 95px;
+	padding-bottom: 90px;
+}
+
+.hero__tab {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-dark);
+	gap: 10px;
+	padding: 26px 33px;
+	border-radius: 8px;
+	margin: 0 -15px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+	transition: transform var(--transition-normal);
+}
+
+.hero__tab:hover {
+	transform: rotate(0deg) scale(1.05);
+	z-index: 10;
+	cursor: pointer;
+}
+
+.twitter__tab {
+	transform: rotate(-4deg) translateY(10px);
+}
+
+.pinterest__tab {
+	transform: rotate(2deg) translateY(-5px);
+}
+
+.facebook__tab {
+	transform: rotate(-2deg) translateY(5px);
+}
+
+.dribble__tab {
+	transform: rotate(4deg) translateY(-10px);
+}
+
+.hero__tab-icon {
+	width: 32px;
+}
+
+.link__text {
+	font-family: "Roboto", sans-serif;
+	font-size: var(--text-md);
+	white-space: nowrap;
+	max-width: 140px;
+	overflow: hidden;
+	-webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
+	mask-image: linear-gradient(to right, black 70%, transparent 100%);
+	transition: max-width var(--transition-normal) ease; 
+}
+
+.hero__tab:hover .link__text {
+	max-width: 250px; 
+}
+
+.tab-close {
+	width: 16px;
+}
+
+/*---------------
+	HEADER & HERO
+---------------*/
+
+/*----------
+	SOLUTION
+----------*/
+.solution {
+	background-color: var(--color-primary);
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+
+.solution__title {
+	position: relative;
+	font-weight: var(--fw-bold);
+	font-size: var(--text-xxxl);
+	margin-bottom: 60px;
+}
+
+.solution__title::before {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 35px;
+	background-image: url("../img/arrow\ —\ black.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 220px;
+	right: 320px;
+}
+
+.solution__title::after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 35px;
+	background-image: url("../img/arrow\ —\ black.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 185px;
+	left: 305px;
+	transform: rotate(180deg);
+}
+
+.solution__card {
+	position: relative;
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 60px 80px;
+	background-color: #fff;
+	border-radius: 16px;
+}
+
+.solution__card::before {
+	content: "solution for discover a trend";
+	position: absolute;
+	width: 92px;
+	font-family: var(--font-accent);
+	font-size: var(--text-xs);
+	top: 100px;
+	left: -120px;
+	transform: rotate(6deg);
+}
+
+.solution__card::after {
+	content: "You just need one tab now";
+	position: absolute;
+	width: 75px;
+	font-family: var(--font-accent);
+	font-size: var(--text-xs);
+	top: 50px;
+	right: -105px;
+	transform: rotate(6deg);
+}
+
+.solution__tab {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-dark);
+	gap: 10px;
+	padding: 26px 33px;
+	border-radius: 8px;
+	transition: transform var(--transition-normal);
+}
+
+.solution__tab:hover {
+	transform: scale(1.05);
+}
+
+.solution__tab-icon {
+	width: 32px;
+}
+
+.link__text {
+	font-family: "Roboto", sans-serif;
+	font-size: var(--text-md);
+	white-space: nowrap;
+	max-width: 140px;
+	overflow: hidden;
+	-webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
+	mask-image: linear-gradient(to right, black 70%, transparent 100%);
+	transition: max-width var(--transition-normal) ease; 
+}
+
+.solution__tab:hover .link__text {
+	max-width: 250px; 
+}
+
+.solution__description {
+	max-width: 716px;
+	margin: 60px auto 0; 
+	line-height: var(--line-height-relaxed);
+}
