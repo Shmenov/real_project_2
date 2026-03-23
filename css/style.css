@@ -517,3 +517,51 @@ a {
 .longtext__muted {
 	color: #ADADAD;
 }
+
+/*--------
+	PARTNER
+--------*/
+.partner {
+	margin-top: 140px;
+	margin-bottom: 140px;
+}
+
+.partner .container {
+	max-width: 1160px;
+}
+
+.partner__title {
+	font-weight: var(--fw-bold);
+	font-size: var(--text-xxl);
+	margin-bottom: 80px;
+}
+
+.brands {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 32px;
+}
+
+.partner__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	background-color: #F5F5F5;
+	border-radius: 8px;
+	transition: background-color 0.3s ease;
+}
+
+.partner__link:hover {
+  background-color: #E8E8E8; 
+}
+
+.partner__img {
+	max-width: 80%;
+	max-height: 40%;
+	object-fit: contain;
+}
+
+.wetransfer__img {
+	max-width: 100%;
+}
