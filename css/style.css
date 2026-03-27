@@ -831,3 +831,59 @@ a {
 	justify-content: flex-start;
 	gap: 10px;
 }
+
+/*------
+	JOIN
+------*/
+.join {
+	background-color: var(--color-primary);
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+
+.join .container {
+	max-width: 770px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.join__title {
+	font-weight: var(--fw-heavy);
+	font-size: var(--text-xxxl);
+	line-height: var(--line-height-snug);
+	margin-bottom: 40px;
+	animation: fadeInUp 0.8s ease forwards;
+}
+
+.join__muted {
+	color: #87D322;
+}
+
+.join__button {
+	background-color: var(--color-text);
+	padding: 16px 53px;
+	transition: transform var(--transition-normal) cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow var(--transition-normal) ease;
+}
+
+.join__button:hover {
+	transform: scale(1.1);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.join__button:active {
+	transform: scale(0.95);
+}
+
+/* Нужно добавить JS чтобы анимация срабатывала только при долистовании до этой секции */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
