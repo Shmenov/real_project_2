@@ -513,6 +513,9 @@ a {
 /*----------
 	LONGTEXT
 ----------*/
+
+/* Сделать анимацию написаная текста при пролитовании до секции */
+
 .longtext__description {
 	max-width: 1205px;
 	padding: 140px 0;
@@ -887,3 +890,48 @@ a {
 	}
 }
 
+/*--------
+	FOOTER
+--------*/
+.footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.footer .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__logotype {
+	transition: transform var(--transition-normal) ease;
+}
+
+.footer__logotype:hover {
+	transform: scale(1.1);
+}
+
+.footer__logo__img {
+	fill: var(--color-text);
+	transition: transform var(--transition-normal) ease;
+}
+
+.footer__logo {
+	color: var(--color-text);
+}
+
+.footer__list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.footer__link {
+	color: var(--color-text);
+	transition: opacity var(--transition-normal) ease;
+}
+
+.footer__link:hover {
+	opacity: 0.6;
+}
