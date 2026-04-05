@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@font-face {
-  font-family: "GoodDog";
-  src: url("/fonts/gooddognew.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 /*----------
 		RESET
 ----------*/
@@ -103,8 +95,7 @@ html {
 	--color-text: #000;
 
 	--font-main: "Inter", sans-serif;
-	--font-accent: "GoodDog", cursive;
-	
+
 	--fw-light: 400;
 	--fw-regular: 500;
 	--fw-bold: 700;
@@ -301,28 +292,15 @@ a {
 }
 
 .hero__button::before {
-	content: "All research start from here";
-	position: absolute;
-	width: 91px;
-	font-family: var(--font-accent);
-	font-size: var(--text-xs);
-	color: #fff;
-	top: -15px;
-	right: -110px;
-	transform: rotate(6deg);
-	pointer-events: none;
-}
-
-.hero__button::after {
 	content: "";
 	position: absolute;
-	width: 30px;
-	height: 35px;
-	background-image: url("../img/arrow\ —\ white.svg");
+	width: 100px;
+	height: 70px;
+	background-image: url("../img/arrows/hero-arrow.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
-	top: 30px;
-	right: -50px;
+	top: -15px;
+	right: -120px;
 	pointer-events: none;
 }
 
@@ -391,10 +369,6 @@ a {
 	width: 16px;
 }
 
-/*---------------
-	HEADER & HERO
----------------*/
-
 /*----------
 	SOLUTION
 ----------*/
@@ -405,35 +379,9 @@ a {
 }
 
 .solution__title {
-	position: relative;
 	font-weight: var(--fw-bold);
 	font-size: var(--text-xxxl);
 	margin-bottom: 60px;
-}
-
-.solution__title::before {
-	content: "";
-	position: absolute;
-	width: 30px;
-	height: 35px;
-	background-image: url("../img/arrow\ —\ black.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	top: 220px;
-	right: 320px;
-}
-
-.solution__title::after {
-	content: "";
-	position: absolute;
-	width: 30px;
-	height: 35px;
-	background-image: url("../img/arrow\ —\ black.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	top: 185px;
-	left: 305px;
-	transform: rotate(180deg);
 }
 
 .solution__card {
@@ -450,25 +398,27 @@ a {
 }
 
 .solution__card::before {
-	content: "solution for discover a trend";
+	content: "";
 	position: absolute;
-	width: 92px;
-	font-family: var(--font-accent);
-	font-size: var(--text-xs);
-	top: 100px;
-	left: -120px;
-	transform: rotate(6deg);
+	width: 100px;
+	height: 70px;
+	background-image: url("../img/arrows/solution-left.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 70px;
+	left: -125px; 
 }
 
 .solution__card::after {
-	content: "You just need one tab now";
+	content: "";
 	position: absolute;
-	width: 75px;
-	font-family: var(--font-accent);
-	font-size: var(--text-xs);
+	width: 100px;
+	height: 70px;
+	background-image: url("../img/arrows/solution-right.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
 	top: 50px;
-	right: -105px;
-	transform: rotate(6deg);
+	right: -125px; 
 }
 
 .solution__tab {
@@ -487,17 +437,6 @@ a {
 
 .solution__tab-icon {
 	width: 32px;
-}
-
-.link__text {
-	font-family: "Roboto", sans-serif;
-	font-size: var(--text-md);
-	white-space: nowrap;
-	max-width: 140px;
-	overflow: hidden;
-	-webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
-	mask-image: linear-gradient(to right, black 70%, transparent 100%);
-	transition: max-width var(--transition-normal) ease; 
 }
 
 .solution__tab:hover .link__text {
@@ -673,7 +612,7 @@ a {
 
 .deal__toggle {
 	position: relative;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	gap: 24px;
@@ -681,27 +620,15 @@ a {
 }
 
 .deal__toggle::before {
-	content: "Save 10% per month";
-	position: absolute;
-	width: 60px;
-	font-family: var(--font-accent);
-	font-size: var(--text-xs);
-	color: #fff;
-	top: -10px;
-	right: 310px;
-	transform: rotate(6deg);
-}
-
-.deal__toggle::after {
 	content: "";
 	position: absolute;
-	width: 30px;
-	height: 35px;
-	background-image: url("../img/arrow\ —\ white.svg");
+	width: 90px;
+	height: 70px;
+	background-image: url("../img/arrows/deal-arrow.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
-	top: 25px;
-	right: 350px;
+	top: -20px;
+	right: -115px;
 }
 
 .toggle__text {
@@ -935,3 +862,169 @@ a {
 .footer__link:hover {
 	opacity: 0.6;
 }
+
+/*-----------------------
+	ADAPTATION - Desktops
+		1440 - 1024 px
+-----------------------*/
+@media (max-width: 1235px) {
+	:root {
+		--text-xs: 1.1rem;
+		--text-sm: 1.5rem;
+		--text-md: 1.9rem;
+		--text-lg: 2.8rem;
+		--text-xl: 3.9rem;
+		--text-xxl: 5.2rem;
+		--text-xxxl: 5.8rem;
+	}
+
+	.header {
+		padding: 20px 0;
+	}
+
+	.header__list {
+		gap: 30px;
+	}
+
+	.header__menu {
+		gap: 30px;
+	}
+
+	.register {
+		padding: 9px 23px;
+	}
+
+	.hero {
+		padding-top: 75px;
+	}
+
+	.hero__text {
+		max-width: 570px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.hero__tab {
+		gap: 8px;
+		padding: 23px 30px;
+	}
+
+	.hero__tab-icon {
+		width: 23px;
+	}
+
+	.tab-close {
+		width: 12px;
+	}
+
+	.link__text {
+		max-width: 115px;
+	}
+
+	.hero__tab:hover .link__text {
+		max-width: 210px;
+	}
+
+	.hero__list {
+		margin-top: 70px;
+		padding-bottom: 65px;
+	}
+
+	.solution {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.solution__title {
+		margin-bottom: 45px;
+	}
+
+	.solution__description {
+		margin: 45px auto 0;
+	}
+
+	.longtext__description {
+		padding: 100px 0;
+		max-width: 1010px;
+	}
+
+	.partner {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.partner__title {
+		margin-bottom: 60px;
+	}
+
+	.brands {
+		gap: 23px;
+	}
+
+	.platform {
+		padding: 100px 0;
+	}
+
+	.platform__title {
+		margin-bottom: 60px;
+	}
+
+	.social {
+		padding: 23px;
+	}
+
+	.social__img {
+		width: 45px;
+	}
+
+	.social__wrapper {
+		margin-bottom: 60px;
+	}
+
+	.platform__button {
+		margin-top: 60px;
+	}
+
+	.deal__title {
+		padding-top: 100px;
+		margin-bottom: 30px;
+	}
+
+	.deal__toggle {
+		margin-bottom: 60px;
+	}
+
+	.deal__cards {
+		gap: 30px;
+		padding-bottom: 100px;
+	}
+
+	.card__button {
+		padding: 12px 60px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.cta {
+		padding: 100px 0;
+	}
+
+	.cta__title {
+		margin-bottom: 30px;
+	}
+
+	.footer {
+		padding: 20px 0;
+	}
+}
+
+/*-----------------------
+	ADAPTATION - Tablets
+		1024 - 600 px
+-----------------------*/
+
+/*-----------------------
+	ADAPTATION - Tablets
+		600 - 320 px
+-----------------------*/
+
