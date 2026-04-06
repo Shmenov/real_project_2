@@ -35,19 +35,25 @@
 				<span class="logo header__logo">Findtrend</span>
 			</a>
 
-			<nav class="header__nav">
-				<ul class="header__list">
-					<li><a href="#" class="header__link link">About</a></li>
-					<li><a href="#" class="header__link link">How it work</a></li>
-					<li><a href="#" class="header__link link">Pricing</a></li>
-					<li><a href="#" class="header__link link">Solution</a></li>
-					<li><a href="#" class="header__link link">Features</a></li>
-				</ul>
-			</nav>
+			<button class="burger-btn" id="burger-btn" type="button">
+				<img src="/img/open.svg" alt="menu" class="burger-icon" id="burger-icon">
+			</button>
 
-			<div class="header__menu">
-				<button class="login" type="button">Login</button>
-				<button class="register" type="button">Register</button>
+			<div class="header__overlay" id="header-overlay">
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li><a href="#" class="header__link link">About</a></li>
+						<li><a href="#" class="header__link link">How it work</a></li>
+						<li><a href="#" class="header__link link">Pricing</a></li>
+						<li><a href="#" class="header__link link">Solution</a></li>
+						<li><a href="#" class="header__link link">Features</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__menu">
+					<button class="login" type="button">Login</button>
+					<button class="register" type="button">Register</button>
+				</div>
 			</div>
 
 		</div>
@@ -131,7 +137,7 @@
 						<picture>
 							<source srcset="/img/articles/1st.avif" type="image/avif">
 							<source srcset="/img/articles/1st.webp" type="image/webp">
-							<img src="/img/articles/1st.png" alt="tweet" class="scrolling__img--small" loading="lazy">
+							<img src="/img/articles/1st.png" alt="tweet" class="scrolling__img scrolling__img--small" loading="lazy">
 						</picture>
 					</a>
 
@@ -139,7 +145,7 @@
 						<picture>
 							<source srcset="/img/articles/2nd.avif" type="image/avif">
 							<source srcset="/img/articles/2nd.webp" type="image/webp">
-							<img src="/img/articles/2nd.png" alt="tweet" class="scrolling__img--large" loading="lazy">
+							<img src="/img/articles/2nd.png" alt="tweet" class="scrolling__img scrolling__img--large" loading="lazy">
 						</picture>
 					</a>
 
@@ -147,7 +153,7 @@
 						<picture>
 							<source srcset="/img/articles/1st.avif" type="image/avif">
 							<source srcset="/img/articles/1st.webp" type="image/webp">
-							<img src="/img/articles/1st.png" alt="tweet" class="scrolling__img--small" loading="lazy">
+							<img src="/img/articles/1st.png" alt="tweet" class="scrolling__img scrolling__img--small" loading="lazy">
 						</picture>
 					</a>
 				</article>
@@ -289,5 +295,6 @@
 			</nav>
 		</div>
 	</footer>
+	<script src="/index.js"></script>
 </body>
 </html>

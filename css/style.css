@@ -105,7 +105,7 @@ html {
   --text-sm: 1.8rem;
   --text-md: 2.4rem;
   --text-lg: 3.6rem;
-  --text-xl: 4.8rem;
+  /* --text-xl: 4.8rem; */
 	--text-xxl: 6.4rem;
 	--text-xxxl: 7.2rem;
 
@@ -180,6 +180,27 @@ a {
 .header {
 	padding: 28px 0;
 	background-color: #000;
+	position: relative;
+	z-index: 100;
+}
+
+.burger-btn {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	z-index: 101;
+}
+
+.header__overlay {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.header__nav {
+	margin: 0 auto;
 }
 
 .header .container {
@@ -873,7 +894,6 @@ a {
 		--text-sm: 1.5rem;
 		--text-md: 1.9rem;
 		--text-lg: 2.8rem;
-		--text-xl: 3.9rem;
 		--text-xxl: 5.2rem;
 		--text-xxxl: 5.8rem;
 	}
@@ -905,24 +925,24 @@ a {
 	}
 
 	.hero__tab {
-		gap: 8px;
-		padding: 23px 30px;
+		gap: 10px;
+		padding: 25px 30px;
 	}
 
 	.hero__tab-icon {
-		width: 23px;
+		width: 30px;
 	}
 
 	.tab-close {
-		width: 12px;
+		width: 15px;
 	}
 
 	.link__text {
-		max-width: 115px;
+		max-width: 130px;
 	}
 
 	.hero__tab:hover .link__text {
-		max-width: 210px;
+		max-width: 240px;
 	}
 
 	.hero__list {
@@ -999,6 +1019,11 @@ a {
 		padding-bottom: 100px;
 	}
 
+	.card--highlighted {
+		padding: 32px;
+		transform: none;
+	}
+
 	.card__button {
 		padding: 12px 60px;
 		margin-right: auto;
@@ -1020,11 +1045,99 @@ a {
 
 /*-----------------------
 	ADAPTATION - Tablets
-		1024 - 600 px
+		1024 - 768 px
 -----------------------*/
+@media (max-width: 1024px) {
+	.hero__list {
+		flex-wrap: wrap;
+	}
 
+	.social {
+		padding: 17px;
+	}
+
+	.social__img {
+		width: 30px;
+	}
+
+	.deal__cards {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+		align-items: center;
+		padding-bottom: 90px;
+	}
+
+	.card__desc {
+		margin-bottom: 28px;
+		padding-bottom: 28px;
+	}
+
+	.card__price-wrap {
+		margin-bottom: 28px;
+	}
+
+	.features-list {
+		margin-bottom: 37px;
+	}
+}
+
+@media (max-width: 910px) {
+	.partner__title, .platform__title {
+		max-width: 540px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.partner__link {
+		height: 97px;
+	}
+}
+
+@media (max-width: 850px) {
+	.burger-btn {
+		display: block;
+	}
+
+	.header__overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: #000;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0;
+		gap: 40px;
+		z-index: 99;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-100%);
+		transition: all var(--transition-normal) ease-in-out;
+	}
+
+	.header__overlay.is-open {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+
+	.header__list, .header__menu {
+		flex-direction: column;
+		gap: 30px;
+		text-align: center;
+	}
+
+	.header__menu {
+		gap: 20px;
+	}
+
+	.scrolling__img {
+		max-width: 570px;
+	}
+}
 /*-----------------------
 	ADAPTATION - Tablets
-		600 - 320 px
+		768 - 320 px
 -----------------------*/
 
