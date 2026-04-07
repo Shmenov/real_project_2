@@ -1135,9 +1135,243 @@ a {
 	.scrolling__img {
 		max-width: 570px;
 	}
-}
-/*-----------------------
-	ADAPTATION - Tablets
-		768 - 320 px
------------------------*/
 
+	.solution__card {
+		max-width: 370px;
+		padding: 42px 52px;
+}
+}
+/*----------------------
+	ADAPTATION - Phones
+		768 - 320 px
+----------------------*/
+@media (max-width: 750px) {
+	.brands {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 19px;
+	}
+
+	.partner__link {
+		height: 86px;
+	}
+
+	.footer {
+		padding: 80px 0;
+	}
+
+	.footer .container {
+		flex-direction: column;
+		gap: 80px;
+	}
+}
+
+@media (max-width: 700px) {
+	.social__wrapper {
+		justify-content: flex-start;
+		gap: 16px; 
+		overflow-x: auto;
+		scrollbar-width: none; 
+	}
+
+	.social__wrapper::-webkit-scrollbar {
+		display: none;
+	}
+
+	.social {
+		flex-shrink: 0; 
+	}
+
+	.card {
+		padding: 25px;
+		max-width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+		:root {
+		--text-sm: 1.4rem;
+	}
+}
+@media (max-width: 640px) {
+	.deal__cards {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 24px;
+	}
+
+		:root {
+		--text-xxl: 3.6rem;
+		--text-xxxl: 3.6rem;
+	}
+
+	.solution {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.solution__title {
+		margin-bottom: 80px;
+	}
+
+	.solution__description {
+		margin: 80px auto 0;
+	}
+
+	.solution__card {
+		max-width: 315px;
+		padding: 24px;
+	}
+
+	.solution__card::before {
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: 70px;
+		background-image: url("../img/adaptation/solution-rightt.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		top: -50px;
+		left: 190px; 
+	}
+
+	.solution__card::after {
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: 70px;
+		background-image: url("../img/adaptation/solution-leftt.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		left: 0;
+		top: 115px;
+	}
+
+	.longtext__description {
+		padding: 80px 0;
+	}
+
+	.partner {
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+
+	.partner__title {
+		max-width: 335px;
+		margin-bottom: 35px;
+	}
+
+	.platform {
+		padding: 80px 0;
+	}
+
+	.platform__title {
+		max-width: 340px;
+		margin-bottom: 32px;
+	}
+
+	.social__wrapper {
+		margin-bottom: 32px;
+	}
+
+	.scrolling {
+		gap: 16px;
+	}
+
+	.platform__button {
+		margin-top: 32px;
+	}
+
+	.deal__title {
+		padding-top: 80px;
+	}
+
+	.deal__toggle {
+		margin-bottom: 80px;
+	}
+
+	.deal__toggle::before {
+		content: "";
+		position: absolute;
+		width: 65px;
+		height: 65px;
+		background-image: url("../img/adaptation/deal-arroww.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		top: 50px;
+		right: 5px;
+	}
+
+	.deal__cards {
+		padding-bottom: 80px;
+	}
+
+	.cta {
+		padding: 80px 0;
+	}
+
+	.scrolling__img {
+		max-width: 450px;
+	}
+}
+
+@media (max-width: 560px) {
+	.button {
+		padding: 12px 24px;
+	}
+
+	.card__button {
+		padding: 12px 60px;
+	}
+
+	.brands {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+	}
+
+	.partner__link {
+		height: 74px;
+	}
+
+	.volvo__img {
+		max-width: 65%;
+	}
+
+	.footer__list {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 450px) {
+	.header__logo {
+		display: none;
+	}
+
+	.hero__button::before {
+		content: none;
+	}
+
+	.scrolling__img {
+		max-width: 370px;
+	}
+}
+
+@media (max-width: 400px) {
+	.scrolling__img {
+		max-width: 365px;
+	}
+
+	:root {
+		--text-xxl: 3.3rem;
+		--text-xxxl: 3.3rem;
+	}
+}
+
+@media (max-width: 365px) {
+	.scrolling__img {
+		max-width: 290px;
+	}
+
+	:root {
+		--text-xxl: 2.8rem;
+		--text-xxxl: 2.8rem;
+	}
+}
