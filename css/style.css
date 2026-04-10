@@ -218,8 +218,10 @@ a {
 	transition: var(--transition-normal);
 }
 
-.header__logo:hover {
-	color: var(--color-primary);
+@media (hover: hover) {
+	.header__logo:hover {
+		color: var(--color-primary);
+	}
 }
 
 .header__list {
@@ -232,8 +234,10 @@ a {
 	transition: var(--transition-normal);
 }
 
-.header__link:hover {
-	color: var(--color-primary);
+@media (hover: hover) {
+	.header__link:hover {
+		color: var(--color-primary);
+	}
 }
 
 .header__menu {
@@ -258,8 +262,10 @@ a {
 	color: #fff;
 }
 
-.login:hover {
-	color: var(--color-primary);
+@media (hover: hover) {
+	.login:hover {
+		color: var(--color-primary);
+	}
 }
 
 .register {
@@ -269,8 +275,10 @@ a {
   border-radius: 40px;
 }
 
-.register:hover {
-	background-color: var(--color-primary);
+@media (hover: hover) {
+	.register:hover {
+		background-color: var(--color-primary);
+	}
 }
 
 /*------
@@ -308,8 +316,10 @@ a {
 	color: var(--color-text);
 }
 
-.hero__button:hover {
-	transform: translateY(-3px);
+@media (hover: hover) {
+	.hero__button:hover {
+		transform: translateY(-3px);
+	}
 }
 
 .hero__button::before {
@@ -345,10 +355,12 @@ a {
 	transition: transform var(--transition-normal);
 }
 
-.hero__tab:hover {
-	transform: rotate(0deg) scale(1.05);
-	z-index: 10;
-	cursor: pointer;
+@media (hover: hover) {
+	.hero__tab:hover {
+		transform: rotate(0deg) scale(1.05);
+		z-index: 10;
+		cursor: pointer;
+	}
 }
 
 .twitter__tab {
@@ -382,8 +394,10 @@ a {
 	transition: max-width var(--transition-normal) ease; 
 }
 
-.hero__tab:hover .link__text {
-	max-width: 250px; 
+@media (hover: hover) {
+	.hero__tab:hover .link__text {
+		max-width: 250px; 
+	}
 }
 
 .tab-close {
@@ -452,16 +466,20 @@ a {
 	transition: transform var(--transition-normal);
 }
 
-.solution__tab:hover {
-	transform: scale(1.05);
+@media (hover: hover) {
+	.solution__tab:hover {
+		transform: scale(1.05);
+	}
 }
 
 .solution__tab-icon {
 	width: 32px;
 }
 
-.solution__tab:hover .link__text {
-	max-width: 250px; 
+@media (hover: hover) {
+	.solution__tab:hover .link__text {
+		max-width: 250px; 
+	}
 }
 
 .solution__description {
@@ -519,8 +537,10 @@ a {
 	transition: background-color var(--transition-normal) ease;
 }
 
-.partner__link:hover {
-	background-color: var(--color-primary);
+@media (hover: hover) {
+	.partner__link:hover {
+		background-color: var(--color-primary);
+	}
 }
 
 .partner__img {
@@ -568,9 +588,11 @@ a {
 	transition: all var(--transition-normal);
 }
 
-.social:hover {
-	background-color: var(--color-primary);
-	transform: scale(1.2);
+@media (hover: hover) {
+	.social:hover {
+		background-color: var(--color-primary);
+		transform: scale(1.2);
+	}
 }
 
 .social:focus {
@@ -595,9 +617,11 @@ a {
 	overflow: hidden;
 }
 
-.scrolling__link:hover {
-	transform: translateY(-8px);
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+@media (hover: hover) {
+	.scrolling__link:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	}
 }
 
 .scrolling__link:active {
@@ -610,8 +634,10 @@ a {
 	color: #fff;
 }
 
-.platform__button:hover {
-	transform: translateY(-5px);
+@media (hover: hover) {
+	.platform__button:hover {
+		transform: translateY(-5px);
+	}
 }
 
 /*------
@@ -705,14 +731,16 @@ a {
 	transition: all var(--transition-normal) ease;
 }
 
-.card:not(.card--highlighted):hover {
-	transform: translateY(-10px);
-	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-}
+@media (hover: hover) {
+	.card:not(.card--highlighted):hover {
+		transform: translateY(-10px);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+	}
 
-.card--highlighted:hover {
-	transform: scale(1.05) translateY(-10px);
-	box-shadow: 0 20px 40px rgba(168, 255, 53, 0.2); 
+	.card--highlighted:hover {
+		transform: scale(1.05) translateY(-10px);
+		box-shadow: 0 20px 40px rgba(168, 255, 53, 0.2); 
+	}
 }
 
 .card--highlighted {
@@ -750,9 +778,11 @@ a {
 	transition: all var(--transition-normal) ease;
 }
 
-.card__button:hover {
-	transform: scale(1.05);
-	opacity: 0.9;
+@media (hover: hover) {
+	.card__button:hover {
+		transform: scale(1.05);
+		opacity: 0.9;
+	}
 }
 
 .card__button:active {
@@ -817,9 +847,11 @@ a {
 	transition: transform var(--transition-normal) cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow var(--transition-normal) ease;
 }
 
-.cta__button:hover {
-	transform: scale(1.1);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+@media (hover: hover) {
+	.cta__button:hover {
+		transform: scale(1.1);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+	}
 }
 
 .cta__button:active {
@@ -856,8 +888,10 @@ a {
 	transition: transform var(--transition-normal) ease;
 }
 
-.footer__logotype:hover {
-	transform: scale(1.1);
+@media (hover: hover) {
+	.footer__logotype:hover {
+		transform: scale(1.1);
+	}
 }
 
 .footer__logo__img {
@@ -880,8 +914,10 @@ a {
 	transition: opacity var(--transition-normal) ease;
 }
 
-.footer__link:hover {
-	opacity: 0.6;
+@media (hover: hover) {
+	.footer__link:hover {
+		opacity: 0.6;
+	}
 }
 
 /*-----------------------
@@ -941,8 +977,10 @@ a {
 		max-width: 130px;
 	}
 
-	.hero__tab:hover .link__text {
-		max-width: 240px;
+	@media (hover: hover) {
+		.hero__tab:hover .link__text {
+			max-width: 240px;
+		}
 	}
 
 	.hero__list {
@@ -953,6 +991,10 @@ a {
 	.solution {
 		padding-top: 100px;
 		padding-bottom: 100px;
+	}
+
+	.solution__tab {
+		padding: 18px 22px;
 	}
 
 	.solution__title {
@@ -1061,10 +1103,14 @@ a {
 	}
 
 	.deal__cards {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 30px;
+		grid-template-columns: repeat(2, 310px);
+		justify-content: center;
 		align-items: center;
 		padding-bottom: 90px;
+	}
+
+	.card {
+		height: 550px;
 	}
 
 	.card__desc {
@@ -1133,7 +1179,9 @@ a {
 	}
 
 	.scrolling__img {
-		max-width: 570px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.solution__card {
@@ -1183,12 +1231,13 @@ a {
 
 	.card {
 		padding: 25px;
-		max-width: 290px;
+		width: 290px;
+		height: 515px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-		:root {
+	:root {
 		--text-sm: 1.4rem;
 	}
 }
@@ -1196,6 +1245,7 @@ a {
 	.deal__cards {
 		grid-template-columns: repeat(1, 1fr);
 		gap: 24px;
+		padding-bottom: 80px;
 	}
 
 		:root {
@@ -1288,6 +1338,15 @@ a {
 		margin-bottom: 80px;
 	}
 
+	.toggle__switch {
+		height: 44px;
+	}
+
+	.toggle__switch::before {
+		width: 28px;
+		height: 28px;
+	}
+
 	.deal__toggle::before {
 		content: "";
 		position: absolute;
@@ -1296,20 +1355,12 @@ a {
 		background-image: url("../img/adaptation/deal-arroww.svg");
 		background-size: contain;
 		background-repeat: no-repeat;
-		top: 50px;
+		top: 45px;
 		right: 5px;
-	}
-
-	.deal__cards {
-		padding-bottom: 80px;
 	}
 
 	.cta {
 		padding: 80px 0;
-	}
-
-	.scrolling__img {
-		max-width: 450px;
 	}
 }
 
@@ -1348,17 +1399,9 @@ a {
 	.hero__button::before {
 		content: none;
 	}
-
-	.scrolling__img {
-		max-width: 370px;
-	}
 }
 
 @media (max-width: 400px) {
-	.scrolling__img {
-		max-width: 365px;
-	}
-
 	:root {
 		--text-xxl: 3.3rem;
 		--text-xxxl: 3.3rem;
@@ -1366,10 +1409,6 @@ a {
 }
 
 @media (max-width: 365px) {
-	.scrolling__img {
-		max-width: 290px;
-	}
-
 	:root {
 		--text-xxl: 2.8rem;
 		--text-xxxl: 2.8rem;
