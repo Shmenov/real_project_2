@@ -363,19 +363,19 @@ a {
 	}
 }
 
-.twitter__tab {
+.hero__tab--twitter {
 	transform: rotate(-4deg) translateY(10px);
 }
 
-.pinterest__tab {
+.hero__tab--pinterest {
 	transform: rotate(2deg) translateY(-5px);
 }
 
-.facebook__tab {
+.hero__tab--facebook {
 	transform: rotate(-2deg) translateY(5px);
 }
 
-.dribble__tab {
+.hero__tab--dribble {
 	transform: rotate(4deg) translateY(-10px);
 }
 
@@ -549,7 +549,7 @@ a {
 	object-fit: contain;
 }
 
-.wetransfer__img {
+.partner__img--wetransfer {
 	max-width: 100%;
 }
 
@@ -1272,25 +1272,13 @@ a {
 	}
 
 	.solution__card::before {
-		content: "";
-		position: absolute;
-		width: 100px;
-		height: 70px;
 		background-image: url("../img/adaptation/solution-rightt.svg");
-		background-size: contain;
-		background-repeat: no-repeat;
 		top: -50px;
 		left: 190px; 
 	}
 
 	.solution__card::after {
-		content: "";
-		position: absolute;
-		width: 100px;
-		height: 70px;
 		background-image: url("../img/adaptation/solution-leftt.svg");
-		background-size: contain;
-		background-repeat: no-repeat;
 		left: 0;
 		top: 115px;
 	}
@@ -1348,13 +1336,9 @@ a {
 	}
 
 	.deal__toggle::before {
-		content: "";
-		position: absolute;
 		width: 65px;
 		height: 65px;
 		background-image: url("../img/adaptation/deal-arroww.svg");
-		background-size: contain;
-		background-repeat: no-repeat;
 		top: 45px;
 		right: 5px;
 	}
@@ -1382,7 +1366,7 @@ a {
 		height: 74px;
 	}
 
-	.volvo__img {
+	.partner__img--volvo {
 		max-width: 65%;
 	}
 
